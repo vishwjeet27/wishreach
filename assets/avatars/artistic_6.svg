@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#08101E"/>
+      <stop offset="60%" stop-color="#0F284E"/>
+      <stop offset="100%" stop-color="#1D4ED8"/>
+    </linearGradient>
+    <radialGradient id="headGrad6" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="70%" stop-color="#F1F5F9"/>
+      <stop offset="100%" stop-color="#CBD5E1"/>
+    </radialGradient>
+    <linearGradient id="beanieGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect width="512" height="512" fill="url(#bg6)"/>
+  <circle cx="256" cy="200" r="160" fill="#3B82F6" opacity="0.14" filter="url(#glow)"/>
+
+  
+    <!-- Top accessories (antenna, hat, etc behind or on top) -->
+    
+
+    <!-- Ears -->
+    <ellipse cx="140" cy="270" rx="28" ry="32" fill="#E2E8F0" />
+    <ellipse cx="140" cy="270" rx="16" ry="18" fill="#CBD5E1" />
+    <ellipse cx="372" cy="270" rx="28" ry="32" fill="#E2E8F0" />
+    <ellipse cx="372" cy="270" rx="16" ry="18" fill="#CBD5E1" />
+
+    <!-- Torso / Shoulders -->
+    
+      <path d="M120 480 Q140 370 200 360 L312 360 Q372 370 392 480 Z" fill="#1E3A8A" />
+      <path d="M190 360 L256 425 L322 360 L345 480 L167 480 Z" fill="#172554" />
+      <!-- Glowing < / > Developer Glyph Badge -->
+      <rect x="228" y="420" width="56" height="32" rx="8" fill="#1E293B" stroke="#3B82F6" stroke-width="2" filter="url(#glow)"/>
+      <text x="256" y="442" fill="#60A5FA" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">&lt; / &gt;</text>
+    
+
+    <!-- Neck & Chin Shadow -->
+    <path d="M220 330 Q256 350 292 330 L296 380 Q256 395 216 380 Z" fill="#94A3B8" />
+
+    <!-- Head -->
+    <ellipse cx="256" cy="260" rx="116" ry="108" fill="url(#headGrad6)" filter="url(#dropShadow)" />
+    <!-- Subtle specular highlight on forehead -->
+    <ellipse cx="256" cy="185" rx="60" ry="24" fill="white" opacity="0.18" />
+
+    <!-- Head Accessories (hat, hair, etc) -->
+    
+      <!-- Ribbed Beanie Cap -->
+      <g filter="url(#dropShadow)">
+        <path d="M152 220 C152 135 360 135 360 220 Z" fill="url(#beanieGrad)" />
+        <!-- Folded brim -->
+        <rect x="144" y="200" width="224" height="42" rx="14" fill="#334155" stroke="#1E293B" stroke-width="3"/>
+        <!-- Texture ribs -->
+        <line x1="180" y1="205" x2="180" y2="238" stroke="#475569" stroke-width="2.5"/>
+        <line x1="210" y1="205" x2="210" y2="238" stroke="#475569" stroke-width="2.5"/>
+        <line x1="240" y1="205" x2="240" y2="238" stroke="#475569" stroke-width="2.5"/>
+        <line x1="270" y1="205" x2="270" y2="238" stroke="#475569" stroke-width="2.5"/>
+        <line x1="300" y1="205" x2="300" y2="238" stroke="#475569" stroke-width="2.5"/>
+        <line x1="330" y1="205" x2="330" y2="238" stroke="#475569" stroke-width="2.5"/>
+      </g>
+    
+
+    <!-- Face Elements (eyes, glasses, smile) -->
+    
+      <!-- Intellectual Round Wireframe Glasses -->
+      <g filter="url(#dropShadow)">
+        <!-- Left Lens -->
+        <circle cx="210" cy="265" r="32" fill="none" stroke="#60A5FA" stroke-width="4.5" />
+        <circle cx="210" cy="265" r="28" fill="#38BDF8" opacity="0.12" />
+        <!-- Right Lens -->
+        <circle cx="302" cy="265" r="32" fill="none" stroke="#60A5FA" stroke-width="4.5" />
+        <circle cx="302" cy="265" r="28" fill="#38BDF8" opacity="0.12" />
+        <!-- Bridge -->
+        <path d="M242 265 Q256 258 270 265" stroke="#60A5FA" stroke-width="4.5" fill="none"/>
+        <!-- Lens Glare -->
+        <path d="M195 250 L215 250 L205 275 L188 275 Z" fill="#FFFFFF" opacity="0.4"/>
+        <path d="M287 250 L307 250 L297 275 L280 275 Z" fill="#FFFFFF" opacity="0.4"/>
+      </g>
+
+      <!-- Eyes behind glasses -->
+      <circle cx="210" cy="265" r="8" fill="#0F172A"/>
+      <circle cx="213" cy="262" r="3" fill="#FFFFFF"/>
+      <circle cx="302" cy="265" r="8" fill="#0F172A"/>
+      <circle cx="305" cy="262" r="3" fill="#FFFFFF"/>
+
+      <!-- Friendly Smile -->
+      <path d="M234 316 Q256 332 278 316" stroke="#334155" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+    
+  
+</svg>

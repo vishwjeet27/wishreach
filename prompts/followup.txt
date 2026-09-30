@@ -1,0 +1,12 @@
+Regenerate only the {{fieldLabel}} for this client, as a fresh alternative to any previous version. Do not repeat previous phrasing.
+
+Client name: {{clientName}}
+Client company: {{clientCompany}}
+Client designation: {{clientDesignation}}
+Target country: {{targetCountry}}
+Industry: {{industry}}
+
+Client requirements / notes:
+{{requirements}}
+
+Respond with ONLY a JSON object with exactly one key: "{{fieldKey}}". Follow the formatting rules for that key from the system prompt.

@@ -1,0 +1,13 @@
+Write the full outreach set for this client.
+
+Client name: {{clientName}}
+Client company: {{clientCompany}}
+Client designation: {{clientDesignation}}
+Client website: {{clientWebsite}}
+Target country: {{targetCountry}}
+Industry: {{industry}}
+
+Client requirements / notes:
+{{requirements}}
+
+Generate all eight fields described in the output contract, tailored specifically to this client and their stated requirements. Reference the industry or country only if it is genuinely useful context, not as filler.

@@ -1,0 +1,71 @@
+{
+  "name": "wishreach",
+  "productName": "WishReach",
+  "version": "1.0.0",
+  "description": "Enterprise B2B cold outreach automation and intelligence desktop platform powered by multi-provider AI.",
+  "main": "src/main/main.js",
+  "type": "module",
+  "author": {
+    "name": "Vishwjeet Singh Vilkhu",
+    "url": "https://github.com/vishwjeet-vilkhu"
+  },
+  "license": "AGPL-3.0-or-later",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vishwjeet-vilkhu/wishreach.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vishwjeet-vilkhu/wishreach/issues"
+  },
+  "homepage": "https://github.com/vishwjeet-vilkhu/wishreach#readme",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "electron . --dev",
+    "start": "electron .",
+    "test": "node --check src/main/main.js && node --check src/main/preload.cjs",
+    "build": "electron-builder --win --dir",
+    "dist": "electron-builder --win nsis"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "electron-store": "^10.0.0"
+  },
+  "devDependencies": {
+    "electron": "^33.2.0",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "com.wishreach.app",
+    "productName": "WishReach",
+    "copyright": "Copyright © 2026 Vishwjeet Singh Vilkhu. GNU AGPL-3.0.",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "src/**/*",
+      "prompts/**/*",
+      "assets/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "assets/icons/icon.png"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "shortcutName": "WishReach"
+    }
+  }
+}

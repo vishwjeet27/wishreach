@@ -1,0 +1,156 @@
+/**
+ * Design tokens for WishReach.
+ * Strictly monochrome per brief: black, white, and five grey steps only.
+ * No color is ever used to encode meaning (success/danger/etc.) — weight,
+ * border, and fill communicate state instead.
+ */
+
+:root {
+  /* Surfaces, dark to light */
+  --bg-0: #060606;   /* window background */
+  --bg-1: #0b0b0b;   /* sidebar, footer */
+  --bg-2: #111111;   /* content background */
+  --bg-3: #171717;   /* cards, panels */
+  --bg-4: #1e1e1e;   /* inputs, hover fill */
+  --bg-5: #262626;   /* pressed / active fill */
+
+  /* Borders */
+  --border: #262626;
+  --border-strong: #3a3a3a;
+  --border-hairline: #1c1c1c;
+
+  /* Text */
+  --text-0: #f7f7f6;  /* primary */
+  --text-1: #b0b0ad;  /* secondary */
+  --text-2: #7a7a77;  /* tertiary / captions */
+  --text-3: #4d4d4a;  /* disabled / placeholders */
+
+  /* Absolutes, used sparingly for inversion (primary buttons, active nav) */
+  --white: #ffffff;
+  --black: #000000;
+
+  /* Typography */
+  --font-sans: 'Inter Variable', 'Inter', -apple-system, 'Segoe UI', sans-serif;
+
+  --text-display: 600 32px/1.15 var(--font-sans);
+  --text-heading: 600 21px/1.3 var(--font-sans);
+  --text-title: 600 15px/1.4 var(--font-sans);
+  --text-body: 400 14px/1.6 var(--font-sans);
+  --text-body-strong: 500 14px/1.6 var(--font-sans);
+  --text-caption: 500 12px/1.5 var(--font-sans);
+  --text-mono-caption: 500 11px/1.4 var(--font-sans);
+
+  --tracking-tight: -0.01em;
+  --tracking-normal: 0em;
+  --tracking-wide: 0.03em;
+
+  /* Spacing scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 32px;
+  --space-8: 40px;
+  --space-9: 56px;
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-pill: 999px;
+
+  /* Motion */
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration: 180ms;
+
+  /* Layout */
+  --sidebar-width: 236px;
+  --header-height: 60px;
+  --footer-height: 40px;
+
+  --shadow-panel: 0 1px 0 rgba(0, 0, 0, 0.4);
+  --shadow-elevated: 0 12px 28px rgba(0, 0, 0, 0.5);
+}
+
+/* ================= Themes ================= */
+/* ================= Themes ================= */
+[data-theme="light"] {
+  /* Surfaces - Soft, warm, low-glare ergonomic paper palette */
+  --bg-0: #f6f6f2;   /* window base */
+  --bg-1: #ebebe4;   /* sidebar, topbar, footer: grounded, soothing separation */
+  --bg-2: #f6f6f2;   /* page content canvas: soft, zero eye-strain */
+  --bg-3: #ffffff;   /* cards & panels: clean soft white with subtle elevation */
+  --bg-4: #e4e4dc;   /* inputs, hover fill, chips */
+  --bg-5: #d8d8cf;   /* pressed / active state */
+
+  /* Borders - Soft, organic, non-piercing */
+  --border: #deded6;
+  --border-strong: #c8c8be;
+  --border-hairline: #e8e8e0;
+
+  /* Typography - Deep graphite slate instead of piercing pure black */
+  --text-0: #1a1c20;  /* primary headings & title: rich, crisp, AAA compliant */
+  --text-1: #454952;  /* secondary body: gentle, highly readable across long text */
+  --text-2: #6e737e;  /* tertiary / captions / icons */
+  --text-3: #9ba0ac;  /* placeholders / disabled */
+
+  /* Inverted actions */
+  --white: #22252a;   /* primary button background: deep refined charcoal */
+  --black: #f8f8f6;   /* primary button text: soft off-white */
+
+  /* Soft ambient shadows */
+  --shadow-panel: 0 1px 3px rgba(26, 28, 32, 0.04), 0 1px 2px rgba(26, 28, 32, 0.02);
+  --shadow-elevated: 0 8px 24px rgba(26, 28, 32, 0.06), 0 2px 6px rgba(26, 28, 32, 0.03);
+}
+
+
+[data-theme="midnight"] {
+  --bg-0: #070a13;
+  --bg-1: #0c111e;
+  --bg-2: #101627;
+  --bg-3: #151e33;
+  --bg-4: #1c2742;
+  --bg-5: #253356;
+
+  --border: #223050;
+  --border-strong: #334873;
+  --border-hairline: #162035;
+
+  --text-0: #f1f5fd;
+  --text-1: #a4b7d7;
+  --text-2: #6c84ae;
+  --text-3: #435575;
+
+  --white: #ffffff;
+  --black: #070a13;
+
+  --shadow-panel: 0 1px 0 rgba(0, 0, 0, 0.6);
+  --shadow-elevated: 0 12px 28px rgba(0, 5, 20, 0.7);
+}
+
+[data-theme="amber"] {
+  --bg-0: #0f0d0b;
+  --bg-1: #161310;
+  --bg-2: #1d1915;
+  --bg-3: #24201b;
+  --bg-4: #2e2923;
+  --bg-5: #3a342c;
+
+  --border: #363028;
+  --border-strong: #4c4338;
+  --border-hairline: #221d17;
+
+  --text-0: #fbf7ee;
+  --text-1: #c5beae;
+  --text-2: #8f8776;
+  --text-3: #5c5547;
+
+  --white: #ffffff;
+  --black: #0f0d0b;
+
+  --shadow-panel: 0 1px 0 rgba(0, 0, 0, 0.5);
+  --shadow-elevated: 0 12px 28px rgba(0, 0, 0, 0.6);
+}
+

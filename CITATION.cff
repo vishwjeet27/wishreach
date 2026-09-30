@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use, reference, or fork this software in your research or business workflows, please cite it using the metadata below."
+title: "WishReach: Enterprise AI Cold Outreach Desktop Platform"
+abstract: "Enterprise B2B cold outreach automation and intelligence desktop platform featuring multi-provider AI inference, multimodal screenshot OCR extraction, offline-first data isolation, and OS DPAPI hardware-backed encryption."
+authors:
+  - family-names: "Vilkhu"
+    given-names: "Vishwjeet Singh"
+    website: "https://github.com/vishwjeet-vilkhu"
+version: 1.0.0
+date-released: "2026-09-30"
+license: "AGPL-3.0-or-later"
+repository-code: "https://github.com/vishwjeet-vilkhu/wishreach"
+url: "https://github.com/vishwjeet-vilkhu/wishreach"
+keywords:
+  - "cold-outreach"
+  - "email-automation"
+  - "sales-development"
+  - "b2b-sales"
+  - "electron"
+  - "ai-gateway"
+  - "multimodal-vision"
+  - "groq"
+  - "offline-first"
+  - "data-privacy"

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0F19"/>
+      <stop offset="50%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#1E1B4B"/>
+    </linearGradient>
+    <radialGradient id="headGrad" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="70%" stop-color="#F1F5F9"/>
+      <stop offset="100%" stop-color="#CBD5E1"/>
+    </radialGradient>
+    <linearGradient id="visorGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06B6D4"/>
+      <stop offset="50%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+    <linearGradient id="neonGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#22D3EE"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect width="512" height="512" fill="url(#bg1)"/>
+  <!-- Ambient background glow -->
+  <circle cx="256" cy="180" r="160" fill="#06B6D4" opacity="0.12" filter="url(#glow)"/>
+
+  
+    <!-- Top accessories (antenna, hat, etc behind or on top) -->
+    
+      <!-- Antenna -->
+      <path d="M256 160 Q275 110 305 115" stroke="#CBD5E1" stroke-width="8" stroke-linecap="round" fill="none"/>
+      <circle cx="305" cy="115" r="16" fill="url(#neonGlow)" filter="url(#glow)"/>
+      <circle cx="305" cy="115" r="6" fill="#FFFFFF"/>
+    
+
+    <!-- Ears -->
+    <ellipse cx="140" cy="270" rx="28" ry="32" fill="#E2E8F0" />
+    <ellipse cx="140" cy="270" rx="16" ry="18" fill="#CBD5E1" />
+    <ellipse cx="372" cy="270" rx="28" ry="32" fill="#E2E8F0" />
+    <ellipse cx="372" cy="270" rx="16" ry="18" fill="#CBD5E1" />
+
+    <!-- Torso / Shoulders -->
+    
+      <path d="M120 480 Q140 370 200 360 L312 360 Q372 370 392 480 Z" fill="#0F172A" />
+      <!-- Cyber Hoodie Collar & Accents -->
+      <path d="M190 360 L256 420 L322 360 L350 480 L162 480 Z" fill="#1E293B" />
+      <path d="M256 420 L256 480" stroke="#06B6D4" stroke-width="3" stroke-dasharray="6,4" />
+      <circle cx="210" cy="400" r="5" fill="#22D3EE" filter="url(#glow)"/>
+      <circle cx="302" cy="400" r="5" fill="#22D3EE" filter="url(#glow)"/>
+    
+
+    <!-- Neck & Chin Shadow -->
+    <path d="M220 330 Q256 350 292 330 L296 380 Q256 395 216 380 Z" fill="#CBD5E1" />
+
+    <!-- Head -->
+    <ellipse cx="256" cy="260" rx="116" ry="108" fill="url(#headGrad)" filter="url(#dropShadow)" />
+    <!-- Subtle specular highlight on forehead -->
+    <ellipse cx="256" cy="185" rx="60" ry="24" fill="white" opacity="0.18" />
+
+    <!-- Head Accessories (hat, hair, etc) -->
+    
+
+    <!-- Face Elements (eyes, glasses, smile) -->
+    
+      <!-- Cyber Visor -->
+      <g filter="url(#dropShadow)">
+        <rect x="176" y="235" width="160" height="48" rx="20" fill="#090D16" stroke="url(#visorGrad)" stroke-width="4"/>
+        <rect x="184" y="243" width="144" height="32" rx="14" fill="url(#visorGrad)" opacity="0.85" filter="url(#glow)"/>
+        <!-- Reflection slice -->
+        <path d="M195 245 L235 245 L215 272 L188 272 Z" fill="#FFFFFF" opacity="0.45"/>
+        <line x1="190" y1="259" x2="322" y2="259" stroke="#E0F2FE" stroke-width="2" opacity="0.8"/>
+      </g>
+      <!-- Confident smirk -->
+      <path d="M236 312 Q256 324 276 312" stroke="#475569" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+    
+  
+</svg>

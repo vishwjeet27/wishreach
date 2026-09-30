@@ -1,0 +1,12 @@
+Regenerate only the LinkedIn content for this client, as a fresh alternative to any previous version. Do not repeat previous phrasing.
+
+Client name: {{clientName}}
+Client company: {{clientCompany}}
+Client designation: {{clientDesignation}}
+Target country: {{targetCountry}}
+Industry: {{industry}}
+
+Client requirements / notes:
+{{requirements}}
+
+Respond with ONLY a JSON object with exactly these keys: "linkedinConnection", "linkedinDm". Follow the formatting rules for those keys from the system prompt.

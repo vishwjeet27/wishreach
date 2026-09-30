@@ -1,0 +1,183 @@
+#app {
+  height: 100vh;
+}
+
+/* ---------- Onboarding shell (no sidebar) ---------- */
+.onboarding {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, var(--bg-3), transparent);
+}
+
+.onboarding-card {
+  width: min(560px, 92vw);
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--bg-1);
+  box-shadow: var(--shadow-elevated);
+}
+
+.onboarding-body {
+  padding: var(--space-7) var(--space-8);
+  overflow-y: auto;
+}
+
+.onboarding-steps {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-5) var(--space-8) 0;
+}
+
+.onboarding-step-dot {
+  height: 4px;
+  flex: 1;
+  border-radius: var(--radius-pill);
+  background: var(--bg-4);
+  transition: background var(--duration) var(--ease);
+}
+
+.onboarding-step-dot.is-active,
+.onboarding-step-dot.is-done {
+  background: var(--text-0);
+}
+
+.onboarding-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-5) var(--space-8);
+  border-top: 1px solid var(--border-hairline);
+}
+
+/* ---------- Main app shell ---------- */
+.shell {
+  height: 100%;
+  display: grid;
+  grid-template-columns: var(--sidebar-width) 1fr;
+  grid-template-rows: 1fr var(--footer-height);
+  grid-template-areas:
+    'sidebar main'
+    'footer  footer';
+  background: var(--bg-0);
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background: var(--bg-1);
+  border-right: 1px solid var(--border-hairline);
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.main-column {
+  grid-area: main;
+  display: grid;
+  grid-template-rows: var(--header-height) 1fr;
+  min-width: 0;
+  min-height: 0;
+}
+
+.topbar {
+  border-bottom: 1px solid var(--border-hairline);
+  background: var(--bg-2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--space-6);
+  min-width: 0;
+}
+
+.page {
+  overflow-y: auto;
+  background: var(--bg-2);
+  min-height: 0;
+}
+
+.page-inner {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: var(--space-7) var(--space-8) var(--space-9);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-7);
+}
+
+.page-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-6);
+}
+
+.page-header-text h1 {
+  font: var(--text-display);
+  letter-spacing: var(--tracking-tight);
+}
+
+.page-header-text p {
+  margin-top: var(--space-2);
+  color: var(--text-1);
+  max-width: 60ch;
+}
+
+.app-footer {
+  grid-area: footer;
+  background: var(--bg-1);
+  border-top: 1px solid var(--border-hairline);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--space-6);
+}
+
+/* ---------- Grid utilities ---------- */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-5);
+}
+
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-4);
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.stack-tight {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.row-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+
+@media (max-width: 1180px) {
+  .grid-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
