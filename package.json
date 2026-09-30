@@ -29,7 +29,7 @@
     "dist": "electron-builder --win nsis"
   },
   "dependencies": {
-    "dotenv": "^16.4.5",
+    "dotenv": "^18.0.4",
     "electron-store": "^10.0.0"
   },
   "devDependencies": {
