@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "dotenv": "^16.4.5",
-    "electron-store": "^10.0.0"
+    "electron-store": "^11.0.2"
   },
   "devDependencies": {
     "electron": "^33.2.0",
