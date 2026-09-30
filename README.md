@@ -8,8 +8,8 @@
 [![Inference Gateway](https://img.shields.io/badge/AI%20Gateway-Groq%20%7C%20OpenAI%20%7C%20Gemini%20%7C%20Claude%20%7C%20Ollama-black?style=flat-square)](https://groq.com)
 [![Security](https://img.shields.io/badge/Security-OS%20DPAPI%20%7C%20Strict%20CSP%20%7C%20Sandboxed-success?style=flat-square)](https://www.electronjs.org/docs/latest/tutorial/security)
 [![License: AGPL v3](https://img.shields.io/badge/License-GNU%20AGPLv3-blue.svg?style=flat-square)](LICENSE)
-[![CI](https://github.com/vishwjeet-vilkhu/wishreach/actions/workflows/ci.yml/badge.svg)](https://github.com/vishwjeet-vilkhu/wishreach/actions/workflows/ci.yml)
-[![CodeQL](https://github.com/vishwjeet-vilkhu/wishreach/actions/workflows/codeql.yml/badge.svg)](https://github.com/vishwjeet-vilkhu/wishreach/actions/workflows/codeql.yml)
+[![CI](https://github.com/vishwjeet27/wishreach/actions/workflows/ci.yml/badge.svg)](https://github.com/vishwjeet27/wishreach/actions/workflows/ci.yml)
+[![CodeQL](https://github.com/vishwjeet27/wishreach/actions/workflows/codeql.yml/badge.svg)](https://github.com/vishwjeet27/wishreach/actions/workflows/codeql.yml)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg?style=flat-square)](CODE_OF_CONDUCT.md)
 
@@ -277,7 +277,7 @@ WishReach is designed to comply with corporate security policies:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/vishwjeet-vilkhu/wishreach.git
+   git clone https://github.com/vishwjeet27/wishreach.git
    cd wishreach/wishreach
    ```
 
@@ -416,8 +416,8 @@ Get-ChildItem -Path src -Recurse -Include *.js, *.cjs | ForEach-Object { node --
 WishReach was conceived, architected, and engineered by **Vishwjeet Singh Vilkhu**.
 
 - **Author**: Vishwjeet Singh Vilkhu
-- **GitHub**: [github.com/vishwjeet-vilkhu](https://github.com/vishwjeet-vilkhu)
-- **Repository**: [github.com/vishwjeet-vilkhu/wishreach](https://github.com/vishwjeet-vilkhu/wishreach)
+- **GitHub Profile**: [github.com/vishwjeet-vilkhu](https://github.com/vishwjeet-vilkhu)
+- **Repository**: [github.com/vishwjeet27/wishreach](https://github.com/vishwjeet27/wishreach)
 
 ### Attribution Preservation Policy
 
@@ -458,7 +458,7 @@ If you reference or use WishReach in academic studies, industry whitepapers, or 
   author = {Vilkhu, Vishwjeet Singh},
   title = {{WishReach: Enterprise AI Cold Outreach Desktop Platform}},
   year = {2026},
-  url = {https://github.com/vishwjeet-vilkhu/wishreach},
+  url = {https://github.com/vishwjeet27/wishreach},
   license = {AGPL-3.0-or-later}
 }
 ```

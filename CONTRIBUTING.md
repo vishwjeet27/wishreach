@@ -46,7 +46,7 @@ WishReach was conceived and architected by **Vishwjeet Singh Vilkhu**.
 
 1. Fork the repository on GitHub:
    ```
-   https://github.com/vishwjeet-vilkhu/wishreach/fork
+   https://github.com/vishwjeet27/wishreach/fork
    ```
 
 2. Clone your fork locally:

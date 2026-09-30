@@ -12,12 +12,12 @@
   "license": "AGPL-3.0-or-later",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vishwjeet-vilkhu/wishreach.git"
+    "url": "https://github.com/vishwjeet27/wishreach.git"
   },
   "bugs": {
-    "url": "https://github.com/vishwjeet-vilkhu/wishreach/issues"
+    "url": "https://github.com/vishwjeet27/wishreach/issues"
   },
-  "homepage": "https://github.com/vishwjeet-vilkhu/wishreach#readme",
+  "homepage": "https://github.com/vishwjeet27/wishreach#readme",
   "engines": {
     "node": ">=18"
   },

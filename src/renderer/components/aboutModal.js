@@ -52,7 +52,7 @@ export function openAboutModal() {
     icon: 'globe',
     size: 'sm',
     onClick: () => {
-      window.open('https://github.com/vishwjeet-vilkhu/wishreach', '_blank');
+      window.open('https://github.com/vishwjeet27/wishreach', '_blank');
     },
   });
 
